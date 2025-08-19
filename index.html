@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <title>Luna-Minibagrovanie</title> 
+  <link rel="stylesheet" href="style.css" /> 
+</head>
+
+<body> 
+
+  <!-- HEADER SECTION -->
+  <header class="site-header"> <!-- Main site header -->
+    <div class="container header-inner"> <!-- Centers and constrains content width -->
+      <a class="brand" href="#"> <!-- Logo and brand name, links to top of page -->
+        <span class="brand-mark" aria-hidden="true"><img src="pictures/Dizajn bez názvu (5).jpg"></span> <!-- Decorative icon (hidden from screen readers) -->
+        <span class="brand-text">Luna - Minibágrovanie</span> <!-- Brand name text -->
+      </a>
+
+      <!-- Mobile menu toggle (CSS-only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu" /> <!-- Hidden checkbox for menu toggle -->
+      <label for="nav-toggle" class="hamburger" aria-hidden="true"> <!-- Label acts as clickable menu icon -->
+        <span></span><span></span><span></span> <!-- Three bars of hamburger icon -->
+      </label>
+
+      <nav class="nav" aria-label="Main"> <!-- Navigation links -->
+        <a href="#features">Služby</a> <!-- Scrolls to Features section -->
+        <a href="#about">O nás</a> <!-- Scrolls to About section -->
+        <a href="#gallery">Galéria</a> <!-- Scrolls to Gallery section -->
+        <a class="btn btn--small" href="#contact">Kontakt</a> <!-- Styled as button -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero"> <!-- Big intro section at top -->
+    <div class="container hero-inner"> <!-- Grid layout for text and image -->
+      <div class="hero-copy"> <!-- Text content -->
+        <h1>Minibágrovanie Banská Bystrica a okolie.</h1> <!-- Main heading -->
+        <p>Premeníme vaše vízie na skutočnosť, či už ide o klasické výkopy alebo o estetické stvárnenie terénu</p> <!-- Supporting text -->
+        <div class="hero-actions"> <!-- Buttons container -->
+          <a href="#features" class="btn">Spoznajte naše služby</a> <!-- Primary button -->
+          <a href="#contact" class="btn btn--ghost">Kontaktujte nás</a> <!-- Secondary button -->
+        </div>
+      </div>
+      <div class="hero-media"> <!-- Image content -->
+        <img src="pictures/cover1.jpg" alt="preview" /> <!-- Hero image -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="section"> <!-- Features area -->
+    <div class="container">
+      <h2 class="section-title">Prečo si zamilujete naše služby</h2> <!-- Section title -->
+      <div class="grid cards"> <!-- Grid layout for cards -->
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">⚡</div> <!-- Icon -->
+          <h3>Rýchlosť</h3>
+          <p>Rýchlo uskutočníme vaše vízie. Čím skôr nás kontaktujete, tým skôr sa vám venujeme.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🧩</div>
+          <h3>Flexibilita</h3>
+          <p>Zladíme sa s vami tak, aby vám to vyhovovalo. Samozrejme prispôsobíme sa vášmu rozpočtu, tak aby ste boli spokojní.
+          </p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🔒</div>
+          <h3>Dostupnosť</h3>
+          <p>Sme dostupní kedykoľvek, aj cez víkend, aj v neskorších hodinách.</p>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section section--alt"> <!-- Alternating background -->
+    <div class="container grid two-col"> <!-- Two-column layout -->
+      <div>
+        <h2>Sme vedení spokojnosťou naších klientov</h2>
+        <p>
+          Sme novozaložená firma v oblasti minibagrovania a terénnych úprav. Naším cieľom je poskytovať kvalitné služby s dôrazom na detaily a spokojnosť zákazníka. My toto myslíme vážne. Chceme vytvárať dôveru medzi nami a klientom, od plnenia zákazky až po finančné úkony.
+          
+        </p>
+        <img src="pictures/cover.jpg" alt="Showcase" class="img" /> <!-- Company logo -->
+        <ul class="checklist">
+          
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title">Galéria</h2>
+      <div class="grid gallery">
+        <img src="pictures/trech_pipes.jpg" alt="Showcase image 1" />
+        <img src="pictures/trench_overall.jpg" alt="Showcase image 2" />
+        <img src="pictures/grading1.jpg" alt="Showcase image 3" />
+        <img src="pictures/IMG_20250726_102416967_HDR.jpg" alt="Showcase image 4" />
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION (CTA) -->
+  <section id="contact" class="cta">
+    <div class="container cta-inner">
+      <h2>Pripravení začať?</h2>
+      <p>Napíšte alebo zavolajte nám a vytvorme niečo spolu.</p>
+      <a href="mailto:luna-info@gmail.com" class="btn btn--inverted">Napíšte nám</a>
+      <a href="tel:+412918232912" class="btn btn--inverted">📞 Zavolajte</a>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Luna. Všetky práva vyhradené.</p> <!-- Current year auto-filled -->
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#">Súkromie</a>
+        <a href="#">Pravidla</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- JavaScript for auto-updating the year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear(); // Inserts current year into footer
+  </script>
+
+</body>
+</html>
